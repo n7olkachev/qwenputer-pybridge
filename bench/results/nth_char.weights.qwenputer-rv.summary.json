@@ -1,0 +1,12 @@
+{
+ "task": "nth_char",
+ "mode": "weights",
+ "model": "qwenputer-rv",
+ "n": 50,
+ "accuracy": 0.98,
+ "mean_calls": 1.0,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 105978,
+ "mean_seconds": 37.1,
+ "lock_errors": 0
+}

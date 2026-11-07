@@ -1,0 +1,71 @@
+=== count_char weights 15:34
+[49/50] count_char-48: ok  pred='3<|im_end|>' target='3' calls=1 chip=107,830 (35.6s) lock=False  acc so far 100.0%
+[50/50] count_char-49: ok  pred='3<|im_end|>' target='3' calls=1 chip=109,959 (37.1s) lock=False  acc so far 100.0%
+{"task": "count_char", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 1.0, "mean_calls": 1.0, "mean_instructions": 0, "mean_trace_tokens": 110066, "mean_seconds": 36.8, "lock_errors": 0}
+=== reverse weights 16:06
+[49/50] reverse-48: ok  pred='egapeesmoortruoc' target='egapeesmoortruoc' calls=1 chip=109,888 (36.5s) lock=False  acc so far 20.4%
+[50/50] reverse-49: BAD pred='rednatsybtlaw' target='rednatsybtunlaw' calls=1 chip=108,928 (35.8s) lock=False  acc so far 20.0%
+{"task": "reverse", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 0.2, "mean_calls": 1.0, "mean_instructions": 0, "mean_trace_tokens": 107686, "mean_seconds": 35.8, "lock_errors": 0}
+=== word_sorting weights 16:37
+[49/50] word_sorting-48: ok  pred='anheuser bungle chaperon frame hippodrome keller miterwort prompt spidery together yolk' target='anheuser bungle chaperon frame hippodrome keller miterwort prompt spidery together yolk' calls=1 chip=213,028 (75.5s) lock=False  acc so far 95.9%
+[50/50] word_sorting-49: ok  pred='amphibious assist baseplate benchmark ell hatchet homecoming loess machine percentage pilot prorate redcoat reverie sank stallion thoughtful wehr wince' target='amphibious assist baseplate benchmark ell hatchet homecoming loess machine percentage pilot prorate redcoat reverie sank stallion thoughtful wehr wince' calls=1 chip=267,904 (97.0s) lock=False  acc so far 96.0%
+{"task": "word_sorting", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 0.96, "mean_calls": 1.1, "mean_instructions": 0, "mean_trace_tokens": 215562, "mean_seconds": 77.4, "lock_errors": 0}
+=== nth_char weights 17:43
+[49/50] nth_char-48: ok  pred='l' target='l' calls=1 chip=104,274 (34.7s) lock=False  acc so far 98.0%
+[50/50] nth_char-49: ok  pred='t' target='t' calls=1 chip=111,625 (41.3s) lock=False  acc so far 98.0%
+{"task": "nth_char", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 0.98, "mean_calls": 1.0, "mean_instructions": 0, "mean_trace_tokens": 105978, "mean_seconds": 37.1, "lock_errors": 0}
+=== multistep_arithmetic_two weights 18:16
+[49/50] multistep_arithmetic_two-48: ok  pred='-76' target='-76' calls=1 chip=103,598 (41.5s) lock=False  acc so far 100.0%
+[50/50] multistep_arithmetic_two-49: ok  pred='-1343' target='-1343' calls=1 chip=104,845 (43.6s) lock=False  acc so far 100.0%
+{"task": "multistep_arithmetic_two", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 1.0, "mean_calls": 0.88, "mean_instructions": 0, "mean_trace_tokens": 91447, "mean_seconds": 37.7, "lock_errors": 0}
+=== boolean_expressions weights 18:49
+[49/50] boolean_expressions-48: ok  pred='True' target='True' calls=1 chip=83,670 (31.9s) lock=False  acc so far 91.8%
+[50/50] boolean_expressions-49: ok  pred='True' target='True' calls=1 chip=83,207 (32.8s) lock=False  acc so far 92.0%
+{"task": "boolean_expressions", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 0.92, "mean_calls": 0.62, "mean_instructions": 0, "mean_trace_tokens": 51541, "mean_seconds": 22.4, "lock_errors": 0}
+=== date_understanding weights 19:09
+[49/50] date_understanding-48: ok  pred='(F)' target='(F)' calls=0 chip=0 (21.9s) lock=False  acc so far 55.1%
+[50/50] date_understanding-49: BAD pred='1958+50=2008, yesterday of 2008-01-02' target='(B)' calls=3 chip=105,608 (74.7s) lock=False  acc so far 54.0%
+{"task": "date_understanding", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 0.54, "mean_calls": 1.46, "mean_instructions": 0, "mean_trace_tokens": 345949, "mean_seconds": 149.0, "lock_errors": 0}
+=== swap_chars weights 21:15
+[49/50] swap_chars-48: BAD pred='gmperaemolybdenum' target='gmperaaemolybdenum' calls=2 chip=211,743 (91.1s) lock=False  acc so far 30.6%
+[50/50] swap_chars-49: BAD pred='viwiateweesttard' target='viwiatewesttard' calls=2 chip=253,594 (109.5s) lock=False  acc so far 30.0%
+{"task": "swap_chars", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 0.3, "mean_calls": 2.1, "mean_instructions": 0, "mean_trace_tokens": 245875, "mean_seconds": 112.2, "lock_errors": 0}
+=== object_counting weights 22:51
+[49/50] object_counting-48: ok  pred='13' target='13' calls=1 chip=81,589 (32.9s) lock=False  acc so far 87.8%
+[50/50] object_counting-49: BAD pred='fruits = ["blackberry", "raspberry", "peach", "plum", "orange", "banana", "grape", "' target='10' calls=6 chip=756,312 (261.9s) lock=False  acc so far 86.0%
+{"task": "object_counting", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 0.86, "mean_calls": 0.48, "mean_instructions": 0, "mean_trace_tokens": 37415, "mean_seconds": 18.7, "lock_errors": 0}
+=== dyck_languages weights 23:08
+[49/50] dyck_languages-48: BAD pred='# We need to close in reverse order of opening: >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >, }, ], ), >' target='>' calls=0 chip=0 (46.7s) lock=False  acc so far 6.1%
+[50/50] dyck_languages-49: BAD pred="            if (top == '[' and char == ']') or (top == '(' and char ==" target=']' calls=2 chip=28,492 (53.9s) lock=False  acc so far 6.0%
+{"task": "dyck_languages", "mode": "weights", "model": "qwenputer-rv", "n": 50, "accuracy": 0.06, "mean_calls": 1.86, "mean_instructions": 0, "mean_trace_tokens": 68033, "mean_seconds": 64.4, "lock_errors": 0}
+=== count_char base 00:03
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== reverse base 00:03
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== word_sorting base 00:04
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== nth_char base 00:04
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== multistep_arithmetic_two base 00:04
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== boolean_expressions base 00:04
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== date_understanding base 00:04
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== swap_chars base 00:04
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== object_counting base 00:04
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== dyck_languages base 00:05
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+=== all done Sat Nov  7 00:05:10 UTC 2026

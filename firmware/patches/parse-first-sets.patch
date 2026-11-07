@@ -1,0 +1,63 @@
+diff --git a/py/parse.c b/py/parse.c
+index 5937427..ab44eb1 100644
+--- a/py/parse.c
++++ b/py/parse.c
+@@ -244,6 +244,19 @@ typedef struct _parser_t {
+ 
+ static void push_result_rule(parser_t *parser, size_t src_line, uint8_t rule_id, size_t num_args);
+ 
++#if MICROPY_PARSE_FIRST_SETS
++// FIRST sets (first_sets.h, generated from this grammar): skip an alternative, an optional rule
++// or a list item whose rule cannot start with the current token, instead of pushing it, trying
++// it and backtracking. Nullable rules have every bit set, so they are never skipped.
++#include "first_sets.h"
++static inline bool rule_can_start(uint16_t arg, mp_token_kind_t tok) {
++    return (rule_first_table[arg & RULE_ARG_ARG_MASK][tok >> 3] >> (tok & 7)) & 1;
++}
++#define RULE_CAN_START(arg, tok) rule_can_start(arg, tok)
++#else
++#define RULE_CAN_START(arg, tok) (true)
++#endif
++
+ static const uint16_t *get_rule_arg(uint8_t r_id) {
+     size_t off = rule_arg_offset_table[r_id];
+     if (r_id >= FIRST_RULE_WITH_OFFSET_ABOVE_255) {
+@@ -1128,6 +1141,9 @@ mp_parse_tree_t mp_parse(mp_lexer_t *lex, mp_parse_input_kind_t input_kind) {
+                         }
+                     } else {
+                         assert(kind == RULE_ARG_RULE);
++                        if (!RULE_CAN_START(rule_arg[i], lex->tok_kind)) {
++                            continue; // this alternative cannot match the current token
++                        }
+                         if (i + 1 < n) {
+                             push_rule(&parser, rule_src_line, rule_id, i + 1); // save this or-rule
+                         }
+@@ -1181,6 +1197,15 @@ mp_parse_tree_t mp_parse(mp_lexer_t *lex, mp_parse_input_kind_t input_kind) {
+                             }
+                         }
+                     } else {
++                        if (!RULE_CAN_START(rule_arg[i], lex->tok_kind)) {
++                            if ((rule_arg[i] & RULE_ARG_KIND_MASK) == RULE_ARG_OPT_RULE) {
++                                push_result_node(&parser, MP_PARSE_NODE_NULL); // optional: skip it
++                                continue;
++                            } else if (i == 0) {
++                                backtrack = true; // mandatory first rule cannot match: this rule fails
++                                goto next_rule;
++                            }
++                        }
+                         push_rule(&parser, rule_src_line, rule_id, i + 1); // save this and-rule
+                         push_rule_from_arg(&parser, rule_arg[i]); // push child of and-rule
+                         goto next_rule;
+@@ -1311,6 +1336,12 @@ mp_parse_tree_t mp_parse(mp_lexer_t *lex, mp_parse_input_kind_t input_kind) {
+                             }
+                         } else {
+                             assert((arg & RULE_ARG_KIND_MASK) == RULE_ARG_RULE);
++                            if (!RULE_CAN_START(arg, lex->tok_kind)) {
++                                // couldn't get element of list (its rule cannot start here)
++                                i += 1;
++                                backtrack = true;
++                                goto list_backtrack;
++                            }
+                             push_rule(&parser, rule_src_line, rule_id, i + 1); // save this list-rule
+                             push_rule_from_arg(&parser, arg); // push child of list-rule
+                             goto next_rule;

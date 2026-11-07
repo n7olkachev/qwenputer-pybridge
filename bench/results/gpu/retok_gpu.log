@@ -1,0 +1,26 @@
+=== retok demo 02:20
+</function>
+</tool_call>
+<tool_response>
+eiklawtropnevad
+</tool_response>
+<think>
+
+</think>
+
+The reversed string is: **eiklawtropnevad**<|im_end|>
+[92 text + 86564 chip tokens in 36.7s, head mismatches 0, lock error None]
+(40s)
+=== reverse weights-retok 02:23
+[50/50] reverse-49: ok  pred='rednatsybtunlaw' target='rednatsybtunlaw' calls=1 chip=108,928 (34.8s) lock=False  acc so far 100.0%
+{"task": "reverse", "mode": "weights-retok", "model": "qwenputer-rv", "n": 50, "accuracy": 1.0, "mean_calls": 1.0, "mean_instructions": 0, "mean_trace_tokens": 107686, "mean_seconds": 36.4, "lock_errors": 0}
+=== swap_chars weights-retok 02:54
+[50/50] swap_chars-49: ok  pred='viwiatewesttard' target='viwiatewesttard' calls=2 chip=210,879 (77.0s) lock=False  acc so far 100.0%
+{"task": "swap_chars", "mode": "weights-retok", "model": "qwenputer-rv", "n": 50, "accuracy": 1.0, "mean_calls": 2.0, "mean_instructions": 0, "mean_trace_tokens": 220083, "mean_seconds": 79.7, "lock_errors": 0}
+=== word_sorting weights-retok 04:02
+[50/50] word_sorting-49: ok  pred='amphibious assist baseplate benchmark ell hatchet homecoming loess machine percentage pilot prorate redcoat reverie sank stallion thoughtful wehr wince' target='amphibious assist baseplate benchmark ell hatchet homecoming loess machine percentage pilot prorate redcoat reverie sank stallion thoughtful wehr wince' calls=1 chip=267,904 (88.9s) lock=False  acc so far 90.0%
+{"task": "word_sorting", "mode": "weights-retok", "model": "qwenputer-rv", "n": 50, "accuracy": 0.9, "mean_calls": 1.2, "mean_instructions": 0, "mean_trace_tokens": 196107, "mean_seconds": 67.2, "lock_errors": 0}
+=== dyck_languages weights-retok 05:00
+[50/50] dyck_languages-49: BAD pred="            if (t == '[' and c == ']') or (" target=']' calls=2 chip=28,492 (39.6s) lock=False  acc so far 10.0%
+{"task": "dyck_languages", "mode": "weights-retok", "model": "qwenputer-rv", "n": 50, "accuracy": 0.1, "mean_calls": 1.78, "mean_instructions": 0, "mean_trace_tokens": 42093, "mean_seconds": 44.9, "lock_errors": 0}
+=== retok done Sat Nov  7 05:39:16 UTC 2026

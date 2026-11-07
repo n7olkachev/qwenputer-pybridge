@@ -1,0 +1,31 @@
+=== count_char base 00:17
+[50/50] count_char-49: ok  pred='3' target='3' calls=0 chip=0 (10.6s) lock=False  acc so far 78.0%
+{"task": "count_char", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 0.78, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 12.7, "lock_errors": 0}
+=== reverse base 00:27
+[50/50] reverse-49: BAD pred='rednatsatsyrtnulaw' target='rednatsybtunlaw' calls=0 chip=0 (1.1s) lock=False  acc so far 0.0%
+{"task": "reverse", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 0.0, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 0.9, "lock_errors": 0}
+=== word_sorting base 00:28
+[50/50] word_sorting-49: BAD pred='amphibious baseplate benchmark ell hatchet homecoming loess machine percentage pilot prorate redcoat reverie sank stallion thoughtful wince wehr' target='amphibious assist baseplate benchmark ell hatchet homecoming loess machine percentage pilot prorate redcoat reverie sank stallion thoughtful wehr wince' calls=0 chip=0 (32.6s) lock=False  acc so far 72.0%
+{"task": "word_sorting", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 0.72, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 19.4, "lock_errors": 0}
+=== nth_char base 00:45
+[50/50] nth_char-49: ok  pred='t' target='t' calls=0 chip=0 (3.0s) lock=False  acc so far 98.0%
+{"task": "nth_char", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 0.98, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 5.2, "lock_errors": 0}
+=== multistep_arithmetic_two base 00:49
+[50/50] multistep_arithmetic_two-49: ok  pred='-1343' target='-1343' calls=0 chip=0 (21.6s) lock=False  acc so far 100.0%
+{"task": "multistep_arithmetic_two", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 1.0, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 19.0, "lock_errors": 0}
+=== boolean_expressions base 01:05
+[50/50] boolean_expressions-49: ok  pred='True' target='True' calls=0 chip=0 (9.0s) lock=False  acc so far 94.0%
+{"task": "boolean_expressions", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 0.94, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 9.0, "lock_errors": 0}
+=== date_understanding base 01:13
+[50/50] date_understanding-49: ok  pred='(B)' target='(B)' calls=0 chip=0 (16.7s) lock=False  acc so far 84.0%
+{"task": "date_understanding", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 0.84, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 21.4, "lock_errors": 0}
+=== swap_chars base 01:31
+[50/50] swap_chars-49: BAD pred='wiwiatewesttard' target='viwiatewesttard' calls=0 chip=0 (18.0s) lock=False  acc so far 38.0%
+{"task": "swap_chars", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 0.38, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 20.5, "lock_errors": 0}
+=== object_counting base 01:48
+[50/50] object_counting-49: ok  pred='10' target='10' calls=0 chip=0 (16.1s) lock=False  acc so far 96.0%
+{"task": "object_counting", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 0.96, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 6.3, "lock_errors": 0}
+=== dyck_languages base 01:54
+[50/50] dyck_languages-49: ok  pred=']' target=']' calls=0 chip=0 (18.0s) lock=False  acc so far 48.0%
+{"task": "dyck_languages", "mode": "base", "model": "Qwen3.5-4B", "n": 50, "accuracy": 0.48, "mean_calls": 0.0, "mean_instructions": 0, "mean_trace_tokens": 0, "mean_seconds": 31.2, "lock_errors": 0}
+=== base done Sat Nov  7 02:20:27 UTC 2026

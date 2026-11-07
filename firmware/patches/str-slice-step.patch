@@ -1,0 +1,56 @@
+diff --git a/py/mpconfig.h b/py/mpconfig.h
+index 1edc080..8952919 100644
+--- a/py/mpconfig.h
++++ b/py/mpconfig.h
+@@ -1365,6 +1365,11 @@ typedef time_t mp_timestamp_t;
+ #define MICROPY_PY_BUILTINS_BYTES_HEX (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
+ #endif
+ 
++// Whether str slices may have a step other than 1 (e.g. s[::-1])
++#ifndef MICROPY_PY_BUILTINS_STR_SLICE_STEP
++#define MICROPY_PY_BUILTINS_STR_SLICE_STEP (0)
++#endif
++
+ // Whether str object is proper unicode
+ #ifndef MICROPY_PY_BUILTINS_STR_UNICODE
+ #define MICROPY_PY_BUILTINS_STR_UNICODE (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_BASIC_FEATURES)
+diff --git a/py/objstrunicode.c b/py/objstrunicode.c
+index fc51166..a2cda99 100644
+--- a/py/objstrunicode.c
++++ b/py/objstrunicode.c
+@@ -203,7 +203,35 @@ static mp_obj_t str_subscr(mp_obj_t self_in, mp_obj_t index, mp_obj_t value) {
+             ostep = slice->step;
+ 
+             if (ostep != mp_const_none && ostep != MP_OBJ_NEW_SMALL_INT(1)) {
++                #if MICROPY_PY_BUILTINS_STR_SLICE_STEP
++                // slices with any step, e.g. s[::-1]: the characters one by one (the same walk as
++                // mp_seq_extract_slice over a byte-indexed ASCII string, or over the UTF-8 chars)
++                mp_bound_slice_t bs;
++                size_t nchars = utf8_charlen(self_data, self_len);
++                mp_seq_get_fast_slice_indexes(nchars, index, &bs);
++                vstr_t vstr;
++                vstr_init(&vstr, 16);
++                mp_int_t i = bs.start, stop = bs.stop, step = bs.step;
++                bool ascii = nchars == self_len;
++                while (step < 0 ? i >= stop : i < stop) {
++                    if (ascii) {
++                        vstr_add_byte(&vstr, self_data[i]);
++                    } else {
++                        const byte *p = str_index_to_ptr(type, self_data, self_len, MP_OBJ_NEW_SMALL_INT(i), false);
++                        int l = 1;
++                        if (UTF8_IS_NONASCII(*p)) {
++                            for (char mask = 0x40; *p & mask; mask >>= 1) {
++                                ++l;
++                            }
++                        }
++                        vstr_add_strn(&vstr, (const char *)p, l);
++                    }
++                    i += step;
++                }
++                return mp_obj_new_str_from_utf8_vstr(&vstr);
++                #else
+                 mp_raise_NotImplementedError(MP_ERROR_TEXT("only slices with step=1 (aka None) are supported"));
++                #endif
+             }
+ 
+             const byte *pstart, *pstop;

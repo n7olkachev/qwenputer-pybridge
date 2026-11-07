@@ -1,0 +1,12 @@
+{
+ "task": "object_counting",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.82,
+ "mean_calls": 1.48,
+ "mean_instructions": 72510,
+ "mean_trace_tokens": 90729,
+ "errors_in_calls": 0,
+ "firmware": "mpy-bridge.elf"
+}

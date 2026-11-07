@@ -1,0 +1,12 @@
+{
+ "task": "dyck_languages",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.24,
+ "mean_calls": 1.28,
+ "mean_instructions": 41398,
+ "mean_trace_tokens": 52564,
+ "errors_in_calls": 2,
+ "overflow_calls": 54
+}

@@ -1,0 +1,19 @@
+[
+ {
+  "ask": "Use python: how many r's are in 'strawberry'?",
+  "text": "<tool_call>\n<function=python>\n<parameter=code>\ndata = 'strawberry'\nprint(data.count('r'))\n</parameter>\n<parameter=data>\nstrawberry\n</parameter>\n</function>\n</tool_call>\n<tool_response>\n3\n</tool_response>\n<think>\n\n</think>\n\nThere are **3** r's in 'strawberry'.<|im_end|>",
+  "text_tokens": 77,
+  "chip_tokens": 87644,
+  "seconds": 172.17507600784302,
+  "head_mismatch": 0,
+  "lock_error": null,
+  "replay": {
+   "ok": true,
+   "positions": 88309,
+   "owned": 87657,
+   "wrong_predictions": 0,
+   "owner_mismatch": 0,
+   "runs": 1
+  }
+ }
+]

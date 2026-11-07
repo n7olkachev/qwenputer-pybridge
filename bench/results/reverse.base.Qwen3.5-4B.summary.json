@@ -1,0 +1,12 @@
+{
+ "task": "reverse",
+ "mode": "base",
+ "model": "Qwen3.5-4B",
+ "n": 50,
+ "accuracy": 0.0,
+ "mean_calls": 0.0,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 0,
+ "mean_seconds": 0.9,
+ "lock_errors": 0
+}

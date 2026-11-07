@@ -1,0 +1,12 @@
+{
+ "task": "boolean_expressions",
+ "mode": "base",
+ "model": "Qwen3.5-4B",
+ "n": 50,
+ "accuracy": 0.94,
+ "mean_calls": 0.0,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 0,
+ "mean_seconds": 9.0,
+ "lock_errors": 0
+}

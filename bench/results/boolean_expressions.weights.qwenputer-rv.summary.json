@@ -1,0 +1,12 @@
+{
+ "task": "boolean_expressions",
+ "mode": "weights",
+ "model": "qwenputer-rv",
+ "n": 50,
+ "accuracy": 0.92,
+ "mean_calls": 0.62,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 51541,
+ "mean_seconds": 22.4,
+ "lock_errors": 0
+}

@@ -1,0 +1,12 @@
+{
+ "task": "boolean_expressions",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.92,
+ "mean_calls": 1.28,
+ "mean_instructions": 91924,
+ "mean_trace_tokens": 114629,
+ "errors_in_calls": 14,
+ "overflow_calls": 4
+}

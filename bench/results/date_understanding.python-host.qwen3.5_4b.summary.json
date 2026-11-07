@@ -1,0 +1,12 @@
+{
+ "task": "date_understanding",
+ "mode": "python-host",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.64,
+ "mean_calls": 0.72,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 0,
+ "errors_in_calls": 11,
+ "overflow_calls": 0
+}

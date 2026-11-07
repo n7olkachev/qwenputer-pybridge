@@ -1,0 +1,12 @@
+{
+ "task": "dyck_languages",
+ "mode": "python-host",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.28,
+ "mean_calls": 0.88,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 0,
+ "errors_in_calls": 15,
+ "overflow_calls": 0
+}

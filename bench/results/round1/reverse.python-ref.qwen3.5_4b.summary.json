@@ -1,0 +1,12 @@
+{
+ "task": "reverse",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.0,
+ "mean_calls": 5.0,
+ "mean_instructions": 394588,
+ "mean_trace_tokens": 494198,
+ "errors_in_calls": 242,
+ "firmware": "mpy-bridge.elf"
+}

@@ -1,0 +1,12 @@
+{
+ "task": "nth_char",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.98,
+ "mean_calls": 0.64,
+ "mean_instructions": 38691,
+ "mean_trace_tokens": 48365,
+ "errors_in_calls": 0,
+ "overflow_calls": 10
+}

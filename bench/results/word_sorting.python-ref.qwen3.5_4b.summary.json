@@ -1,0 +1,12 @@
+{
+ "task": "word_sorting",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.98,
+ "mean_calls": 1.0,
+ "mean_instructions": 166082,
+ "mean_trace_tokens": 207576,
+ "errors_in_calls": 0,
+ "overflow_calls": 0
+}

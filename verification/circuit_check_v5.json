@@ -1,0 +1,13 @@
+{
+ "calls": [
+  "pass",
+  "print(\"souvenirfunctor\"[::-1])",
+  "import datetime as dt\nprint(dt.date(1937,12,24).strftime('%A'))"
+ ],
+ "tokens": 725464,
+ "owned": 725357,
+ "owner_mismatches": 0,
+ "prediction_mismatches": 0,
+ "first_bad": [],
+ "seconds": 2730.4
+}

@@ -1,0 +1,12 @@
+{
+ "task": "date_understanding",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.5,
+ "mean_calls": 1.62,
+ "mean_instructions": 204738,
+ "mean_trace_tokens": 249655,
+ "errors_in_calls": 11,
+ "firmware": "mpy-bridge.elf"
+}

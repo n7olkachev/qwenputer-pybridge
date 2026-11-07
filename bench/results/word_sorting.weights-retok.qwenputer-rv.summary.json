@@ -1,0 +1,12 @@
+{
+ "task": "word_sorting",
+ "mode": "weights-retok",
+ "model": "qwenputer-rv",
+ "n": 50,
+ "accuracy": 0.9,
+ "mean_calls": 1.2,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 196107,
+ "mean_seconds": 67.2,
+ "lock_errors": 0
+}

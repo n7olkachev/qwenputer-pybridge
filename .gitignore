@@ -1,0 +1,20 @@
+# upstream checkouts and toolchains (cloned by the README / gpu/setup_l4.sh)
+/qwenputer/
+/third_party/
+/qwenputer-rv/
+
+# build trees and session logs; the shipped firmware and the GPU tarball are kept
+/build/*
+!/build/mpy-bridge.elf
+
+# LaTeX intermediates
+/paper/paper.tex
+/paper/tectonic.log
+
+__pycache__/
+*.pyc
+.DS_Store
+._*
+*.bak
+/promo/stream.json
+/promo/frames/

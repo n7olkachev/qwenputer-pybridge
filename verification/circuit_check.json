@@ -1,0 +1,11 @@
+{
+ "calls": [
+  "pass"
+ ],
+ "tokens": 25623,
+ "owned": 25598,
+ "owner_mismatches": 0,
+ "prediction_mismatches": 0,
+ "first_bad": [],
+ "seconds": 84.0
+}

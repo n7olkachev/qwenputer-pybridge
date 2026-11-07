@@ -1,0 +1,12 @@
+{
+ "task": "nth_char",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.94,
+ "mean_calls": 0.76,
+ "mean_instructions": 68318,
+ "mean_trace_tokens": 86014,
+ "errors_in_calls": 0,
+ "firmware": "mpy-bridge.elf"
+}

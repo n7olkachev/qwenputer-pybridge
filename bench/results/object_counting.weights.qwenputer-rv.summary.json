@@ -1,0 +1,12 @@
+{
+ "task": "object_counting",
+ "mode": "weights",
+ "model": "qwenputer-rv",
+ "n": 50,
+ "accuracy": 0.86,
+ "mean_calls": 0.48,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 37415,
+ "mean_seconds": 18.7,
+ "lock_errors": 0
+}

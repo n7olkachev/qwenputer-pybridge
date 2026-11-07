@@ -1,0 +1,13 @@
+{
+ "calls": [
+  "pass",
+  "import random; print(random.randint(1, 20))",
+  "import re; print(re.sub(r'\\d', '#', 'a1'), f'{2/3:.2f}')"
+ ],
+ "tokens": 292759,
+ "owned": 292648,
+ "owner_mismatches": 0,
+ "prediction_mismatches": 0,
+ "first_bad": [],
+ "seconds": 1086.6
+}

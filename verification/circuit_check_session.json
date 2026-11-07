@@ -1,0 +1,14 @@
+{
+ "calls": [
+  "words = 'pear apple fig banana'.split()\nprint(sorted(words))",
+  "print('strawberry'.count('r'), len(words))",
+  "1/0",
+  "print('alive')"
+ ],
+ "tokens": 348832,
+ "owned": 348701,
+ "owner_mismatches": 0,
+ "prediction_mismatches": 0,
+ "first_bad": [],
+ "seconds": 1208.6
+}

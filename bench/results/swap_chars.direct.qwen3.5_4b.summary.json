@@ -1,0 +1,11 @@
+{
+ "task": "swap_chars",
+ "mode": "direct",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.24,
+ "mean_calls": 0.0,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 0,
+ "errors_in_calls": 0
+}

@@ -1,0 +1,12 @@
+{
+ "task": "boolean_expressions",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.9,
+ "mean_calls": 1.2,
+ "mean_instructions": 77321,
+ "mean_trace_tokens": 96167,
+ "errors_in_calls": 0,
+ "firmware": "mpy-bridge.elf"
+}

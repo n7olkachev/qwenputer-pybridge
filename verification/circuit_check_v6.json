@@ -1,0 +1,13 @@
+{
+ "calls": [
+  "pass",
+  "print(sorted(data.split()))"
+ ],
+ "data": "pear apple fig banana",
+ "tokens": 121571,
+ "owned": 121503,
+ "owner_mismatches": 0,
+ "prediction_mismatches": 0,
+ "first_bad": [],
+ "seconds": 426.8
+}

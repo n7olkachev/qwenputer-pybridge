@@ -1,0 +1,12 @@
+{
+ "task": "multistep_arithmetic_two",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.92,
+ "mean_calls": 1.46,
+ "mean_instructions": 97621,
+ "mean_trace_tokens": 120907,
+ "errors_in_calls": 0,
+ "firmware": "mpy-bridge.elf"
+}

@@ -1,0 +1,12 @@
+{
+ "task": "word_sorting",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.62,
+ "mean_calls": 2.54,
+ "mean_instructions": 122484,
+ "mean_trace_tokens": 154627,
+ "errors_in_calls": 0,
+ "firmware": "mpy-bridge.elf"
+}

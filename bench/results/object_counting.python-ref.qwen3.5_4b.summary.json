@@ -1,0 +1,12 @@
+{
+ "task": "object_counting",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.82,
+ "mean_calls": 0.72,
+ "mean_instructions": 23463,
+ "mean_trace_tokens": 29586,
+ "errors_in_calls": 0,
+ "overflow_calls": 24
+}

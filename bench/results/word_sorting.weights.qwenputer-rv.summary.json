@@ -1,0 +1,12 @@
+{
+ "task": "word_sorting",
+ "mode": "weights",
+ "model": "qwenputer-rv",
+ "n": 50,
+ "accuracy": 0.96,
+ "mean_calls": 1.1,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 215562,
+ "mean_seconds": 77.4,
+ "lock_errors": 0
+}

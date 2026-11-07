@@ -1,0 +1,12 @@
+{
+ "task": "date_understanding",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.62,
+ "mean_calls": 1.24,
+ "mean_instructions": 212456,
+ "mean_trace_tokens": 258250,
+ "errors_in_calls": 2,
+ "overflow_calls": 36
+}

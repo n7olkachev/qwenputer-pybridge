@@ -1,0 +1,14 @@
+{
+ "calls": [
+  "pass",
+  "s = \"souvenirfunctorresiny\"\ncount = s.count(\"r\")\nprint(count)",
+  "import random; print(random.randint(1, 20))",
+  "import datetime as dt\nprint(dt.date(1937, 12, 24) + dt.timedelta(days=10))"
+ ],
+ "tokens": 748691,
+ "owned": 748529,
+ "owner_mismatches": 0,
+ "prediction_mismatches": 0,
+ "first_bad": [],
+ "seconds": 2595.7
+}

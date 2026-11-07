@@ -1,0 +1,12 @@
+{
+ "task": "dyck_languages",
+ "mode": "weights",
+ "model": "qwenputer-rv",
+ "n": 50,
+ "accuracy": 0.06,
+ "mean_calls": 1.86,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 68033,
+ "mean_seconds": 64.4,
+ "lock_errors": 0
+}

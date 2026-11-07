@@ -1,0 +1,12 @@
+{
+ "task": "nth_char",
+ "mode": "python-host",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.98,
+ "mean_calls": 0.44,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 0,
+ "errors_in_calls": 0,
+ "overflow_calls": 0
+}

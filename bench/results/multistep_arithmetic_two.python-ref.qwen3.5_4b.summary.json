@@ -1,0 +1,12 @@
+{
+ "task": "multistep_arithmetic_two",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 1.0,
+ "mean_calls": 0.92,
+ "mean_instructions": 64345,
+ "mean_trace_tokens": 79892,
+ "errors_in_calls": 0,
+ "overflow_calls": 9
+}

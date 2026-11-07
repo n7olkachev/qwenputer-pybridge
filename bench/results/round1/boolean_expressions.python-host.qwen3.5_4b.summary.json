@@ -1,0 +1,11 @@
+{
+ "task": "boolean_expressions",
+ "mode": "python-host",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.9,
+ "mean_calls": 1.16,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 0,
+ "errors_in_calls": 4
+}

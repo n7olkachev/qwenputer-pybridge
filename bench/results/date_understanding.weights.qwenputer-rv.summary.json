@@ -1,0 +1,12 @@
+{
+ "task": "date_understanding",
+ "mode": "weights",
+ "model": "qwenputer-rv",
+ "n": 50,
+ "accuracy": 0.54,
+ "mean_calls": 1.46,
+ "mean_instructions": 0,
+ "mean_trace_tokens": 345949,
+ "mean_seconds": 149.0,
+ "lock_errors": 0
+}

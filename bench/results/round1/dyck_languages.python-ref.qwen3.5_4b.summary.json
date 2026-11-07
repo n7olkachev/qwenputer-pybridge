@@ -1,0 +1,12 @@
+{
+ "task": "dyck_languages",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.06,
+ "mean_calls": 3.08,
+ "mean_instructions": 98088,
+ "mean_trace_tokens": 124586,
+ "errors_in_calls": 1,
+ "firmware": "mpy-bridge.elf"
+}

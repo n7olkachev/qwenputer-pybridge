@@ -1,0 +1,12 @@
+{
+ "task": "reverse",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.96,
+ "mean_calls": 1.0,
+ "mean_instructions": 63416,
+ "mean_trace_tokens": 78772,
+ "errors_in_calls": 0,
+ "overflow_calls": 0
+}

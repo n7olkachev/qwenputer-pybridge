@@ -1,0 +1,12 @@
+{
+ "task": "swap_chars",
+ "mode": "python-ref",
+ "model": "qwen3.5:4b",
+ "n": 50,
+ "accuracy": 0.64,
+ "mean_calls": 2.72,
+ "mean_instructions": 241932,
+ "mean_trace_tokens": 301844,
+ "errors_in_calls": 38,
+ "overflow_calls": 60
+}
